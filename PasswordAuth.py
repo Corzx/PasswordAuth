@@ -6,8 +6,7 @@ password = getpass.getpass("Please enter your password: ")
 
 for user in database.keys():
     if username == user:
-        while password != database.get(i):
+        while password != database.get(username):
             password = getpass.getpass("Please try again: ")
         break
-
 print("Entry granted")
